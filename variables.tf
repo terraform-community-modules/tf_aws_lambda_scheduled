@@ -15,3 +15,7 @@ variable "iam_policy_document" {}
 variable "enabled" {
   default = true
 }
+
+variable "timeout" {
+  default = 3
+}
