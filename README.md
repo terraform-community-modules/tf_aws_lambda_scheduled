@@ -13,6 +13,7 @@ Module Input Variables
 - `handler` - the entrypoint into your Lambda function, in the form of `filename.function_name`
 - `schedule_expression` - a [valid rate or cron expression](http://docs.aws.amazon.com/lambda/latest/dg/tutorial-scheduled-events-schedule-expressions.html)
 - `iam_policy_document` - a valid IAM policy document used for the Lambda's [execution role](http://docs.aws.amazon.com/lambda/latest/dg/intro-permission-model.html#lambda-intro-execution-role)
+- `enabled` - boolean expression. If false, the lambda function and the cloudwatch schedule are not set. Defaults to `true`.
 
 Usage 
 -----
