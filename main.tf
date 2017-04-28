@@ -33,6 +33,7 @@ resource "aws_lambda_function" "lambda" {
   handler          = "${var.handler}"
   source_code_hash = "${var.source_code_hash}"
   count            = "${var.enabled}"
+  timeout          = "${var.timeout}"
 }
 
 resource "aws_lambda_permission" "cloudwatch" {
