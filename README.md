@@ -57,6 +57,8 @@ module "lambda_scheduled" {
 Outputs
 -------
 - `lambda_arn` - ARN for the created Lambda function
+- `role_arn` - ARN for the created Lambda Role
+- `role_name` - Name for the created Lambda Role
 
 Author
 ------
