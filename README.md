@@ -14,6 +14,8 @@ Module Input Variables
 - `schedule_expression` - a [valid rate or cron expression](http://docs.aws.amazon.com/lambda/latest/dg/tutorial-scheduled-events-schedule-expressions.html)
 - `iam_policy_document` - a valid IAM policy document used for the Lambda's [execution role](http://docs.aws.amazon.com/lambda/latest/dg/intro-permission-model.html#lambda-intro-execution-role)
 - `timeout` - (optional) the amount of time your Lambda Function has to run in seconds. Defaults to 3. See [Limits](https://docs.aws.amazon.com/lambda/latest/dg/limits.html)
+- `subnet_ids` (optional) - If set, the lambda will be deployed inside a VPC on the subnet(s) specified. Expects a comma separated list of valid AWS subnet ids.
+- `security_group_ids` (optional) - If set, the lambda will be deployed inside a VPC and use the security groups specified. Expects a comma separated list of valid VPC security group ids .
 - `enabled` - boolean expression. If false, the lambda function and the cloudwatch schedule are not set. Defaults to `true`.
 
 Usage 

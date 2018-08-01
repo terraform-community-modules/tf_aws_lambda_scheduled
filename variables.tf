@@ -19,3 +19,11 @@ variable "enabled" {
 variable "timeout" {
   default = 3
 }
+
+variable "subnet_ids" {
+  default = []
+}
+
+variable "security_group_ids" {
+  default = []
+}

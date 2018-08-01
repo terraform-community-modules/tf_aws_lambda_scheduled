@@ -34,6 +34,11 @@ resource "aws_lambda_function" "lambda" {
   source_code_hash = "${var.source_code_hash}"
   count            = "${var.enabled}"
   timeout          = "${var.timeout}"
+
+  vpc_config {
+    subnet_ids         = ["${var.subnet_ids}"]
+    security_group_ids = ["${var.security_group_ids}"]
+  }
 }
 
 resource "aws_lambda_permission" "cloudwatch" {
