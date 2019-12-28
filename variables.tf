@@ -1,16 +1,23 @@
-variable "lambda_name" {}
+variable "lambda_name" {
+}
 
-variable "runtime" {}
+variable "runtime" {
+}
 
-variable "lambda_zipfile" {}
+variable "lambda_zipfile" {
+}
 
-variable "source_code_hash" {}
+variable "source_code_hash" {
+}
 
-variable "handler" {}
+variable "handler" {
+}
 
-variable "schedule_expression" {}
+variable "schedule_expression" {
+}
 
-variable "iam_policy_document" {}
+variable "iam_policy_document" {
+}
 
 variable "enabled" {
   default = true
