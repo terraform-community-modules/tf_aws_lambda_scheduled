@@ -27,10 +27,7 @@ variable "timeout" {
   default = 3
 }
 
-variable "subnet_ids" {
-  default = []
-}
-
-variable "security_group_ids" {
-  default = []
+variable "vpc_config" {
+  type = object({subnet_ids = list(string), security_group_ids = list(string)})
+  default = null
 }
