@@ -26,6 +26,7 @@ resource "aws_iam_role_policy" "lambda" {
 }
 
 resource "aws_lambda_function" "lambda" {
+  memory_size      = "${var.memory_size}"
   runtime          = "${var.runtime}"
   filename         = "${var.lambda_zipfile}"
   function_name    = "${var.lambda_name}"

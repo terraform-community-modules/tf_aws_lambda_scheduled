@@ -7,6 +7,7 @@ Module Input Variables
 ----------------------
 
 - `lambda_name` - Unique name for Lambda function
+- `memory_size` (optional) - Amount of memory in MB your Lambda Function can use at runtime. Defaults to 128.
 - `runtime` - A [valid](http://docs.aws.amazon.com/cli/latest/reference/lambda/create-function.html#options) Lambda runtime environment
 - `lambda_zipfile` - path to zip archive containing Lambda function
 - `source_code_hash` - the base64 encoded sha256 hash of the archive file - see TF [archive file provider](https://www.terraform.io/docs/providers/archive/d/archive_file.html)
