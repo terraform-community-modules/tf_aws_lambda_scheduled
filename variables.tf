@@ -2,6 +2,10 @@ variable "lambda_name" {}
 
 variable "runtime" {}
 
+variable "memory_size" {
+  default = 128
+}
+
 variable "lambda_zipfile" {}
 
 variable "source_code_hash" {}
